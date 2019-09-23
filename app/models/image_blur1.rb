@@ -1,15 +1,17 @@
 class Image
 
-def initialize(array)
-  @imageblur = array
+  def initialize
+    @image = image
+  end
+
+  def output_image
+  @image.each do |row|
+    puts row.join
+    end
+    end
 end
 
-def output_image
-  @imageblur.each do |row|
-    puts row.join
-  end
-end
-end
+
 
 image = Image.new([
   [0, 0, 0, 0],
